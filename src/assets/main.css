@@ -1,0 +1,31 @@
+li{
+  list-style-type: none;
+}
+
+body{
+  margin: 0;
+}
+
+.blue{
+  color: #063f8f;
+  background-color: white;
+}
+
+.bg-blue{
+  background-color: #063f8f;
+  color: white;
+}
+
+.marroon{
+  color: #8F6006;
+}
+
+.bd-marroon{
+  border-color: #8F6006;
+}
+
+.btn{
+    border-radius: 0;
+    border: none;
+    padding: .5em;
+}
