@@ -9,13 +9,6 @@ export class BaseHttp
         headers: { 'Content-Type': 'application/json' }
     };
 
-    // getToken()
-    // {
-    //     fetch(env.rooturl+'/auth/claim?token='+env.token+'&origin='+env.origin, this.postOptions)
-    //         .then((response) => {this.token = response?.json()})
-    //         .then(console.log(this.token));
-    // }
-
     queryParamToken()
     {
         return '?token='+env.token;
@@ -37,6 +30,13 @@ export class BaseHttp
     {
         const res =  await fetch(env.rooturl+url+this.queryParamToken()+this.getStrFilter(filter));
         
+        return res.json()
+    }
+
+    async get(url, id)
+    {
+        const res = await fetch(env.rooturl+url+'/'+id+this.queryParamToken())
+
         return res.json()
     }
 }

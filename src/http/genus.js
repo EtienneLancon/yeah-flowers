@@ -10,4 +10,9 @@ export class Genus extends BaseHttp
     {
         return await super.filter('/v1/genus', filter);
     }
+
+    async get(id)
+    {
+        return await super.get('/v1/genus', id)
+    }
 }

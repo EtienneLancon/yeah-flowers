@@ -29,3 +29,18 @@ body{
     border: none;
     padding: .5em;
 }
+
+.table{
+  border: none;
+  border-collapse: collapse;
+}
+.table thead tr th{
+  padding: .5em;
+  background-color: #fbda9d;
+}
+.table tbody tr td{
+  padding: .5em
+}
+.table tbody tr:hover{
+    background-color: #9dc4fb;
+}

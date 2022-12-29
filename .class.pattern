@@ -1,0 +1,6 @@
+export default {
+    rooturl: !ROOT!,
+    origin: !ORIGIN!,
+    token: !TOKEN!,
+    exp: !EXP!
+}

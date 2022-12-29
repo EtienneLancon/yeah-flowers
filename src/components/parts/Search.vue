@@ -27,7 +27,7 @@
 
 <template>
     <div class="box bd-marroon">
-        <div v-for="key in keys">
+        <div class="inputdiv" v-for="key in keys">
             <InputText :llabel="$t('search.'+key)" v-model="this.form[key]"></InputText>
         </div>
         <button class="btn" @click="getResult">{{$t('search.button')}}</button>
@@ -44,6 +44,10 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+
+    .inputdiv{
+        margin-left: 1em;
     }
 
     .btn{

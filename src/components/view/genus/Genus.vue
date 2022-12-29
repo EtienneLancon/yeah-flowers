@@ -1,6 +1,6 @@
 <script>
-    import Search from '../parts/Search.vue';
-    import { Genus } from './../../http/genus';
+    import Search from '../../parts/Search.vue';
+    import { Genus } from '../../../http/genus';
 
     export default
     {
