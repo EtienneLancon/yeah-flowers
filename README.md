@@ -11,7 +11,7 @@ npm install
 
 ## Get browser intended Trefle API Token
 
-Rename .env.dist file in .env and modify it to your needs (don't forget to .gitignore it (you're welcome)), then execute
+Rename .env.dist file in .env and modify it to your needs, then execute
 
 ```sh
 ./getJsToken.sh
