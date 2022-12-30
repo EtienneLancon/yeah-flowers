@@ -1,7 +1,7 @@
 # yeah-flowers
 
-This Vue app is base on the free https://trefle.io/ API. Thanks to them.
-You'll have to register on their website to get your own token.
+This Vue app is a likely abandonned side project based on the free https://trefle.io/ API. Thanks to them.
+If You like to see great ideas with no petrol, you'll have to register on their website to get your own token.
 
 ## Project Setup
 
