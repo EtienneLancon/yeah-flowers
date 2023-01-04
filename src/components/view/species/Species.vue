@@ -1,14 +1,12 @@
 <script>
-    import { ref } from 'vue';
     import Search from '../../parts/Search.vue';
-    import { Plants } from '../../../services/http/plants';
+    import { Species } from '../../../services/http/species';
+    import { ref } from 'vue';
 
     export default
     {
         props: ['alertService'],
         setup(props) {
-            const service = new Plants(props.alertService);
-
             const searchForm = {
                 common_name: '',
                 scientific_name: '',
@@ -26,18 +24,19 @@
 
             const data = ref(null)
 
+            const service = new Species(props.alertService);
+
             return {
-                service,
                 searchForm,
                 data,
-                displayFields
+                displayFields,
+                service
             };
         },
         components:{
             Search
         }
     }
-    
 </script>
 <template>
     <Search v-bind:service="service" :form="searchForm" @result="(result) => data = result"></Search>
@@ -45,12 +44,12 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th v-for="field in displayFields">{{$t('plants.'+field)}}</th>
+                    <th v-for="field in displayFields">{{$t('species.'+field)}}</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="plant in data.data" @dblclick="$router.push({path: '/plants/'+plant.id})">
+                <tr v-for="plant in data.data" @dblclick="$router.push({path: '/species/'+plant.id})">
                     <td v-for="field in displayFields">{{ plant[field] }}</td>
                     <td><img :src="plant.image_url" :alt="plant.scientific_name"/></td>
                 </tr>

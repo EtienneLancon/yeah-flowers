@@ -1,5 +1,5 @@
 <!-- <script>
-    import { Plants } from './../../../http/plants';
+    import { Plants } from './../../../services/http/plants';
     import { BoolDir } from '../../../directives/booldir'
 
     export default

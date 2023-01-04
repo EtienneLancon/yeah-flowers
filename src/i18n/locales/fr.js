@@ -2,11 +2,13 @@ export default
 {
     common:{
         yes: 'Oui',
-        no: 'Non'
+        no: 'Non',
+        unknown: 'Inconnu'
     },
     navbar: {
         plants: 'Plantes',
-        genus: 'Genre'
+        genus: 'Genre',
+        species: 'Espèces'
     },
     search:{
         name: 'Nom',
@@ -20,10 +22,20 @@ export default
         common_name: 'Nom',
         scientific_name: 'Nom scientifique',
         year:	'Années de découverte',
-        status:	'Status',
+        status:	'Statut',
         rank:	'Rang',
         family_common_name:	'Famille',
         genus: 'Genre',
-        vegetable: 'Légume'
+        vegetable: 'Légume',
+    },
+    species:{
+        common_name: 'Nom',
+        scientific_name: 'Nom scientifique',
+        genus: 'Genre',
+        family_common_name: 'Famille',
+        year:	'Années de découverte',
+        status:	'Statut',
+        rank:	'Rang',
+        vegetable: 'Légume',
     }
 };

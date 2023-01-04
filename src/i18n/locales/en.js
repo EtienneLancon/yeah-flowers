@@ -2,11 +2,13 @@ export default
 {
     common:{
         yes: 'Yes',
-        no: 'No'
+        no: 'No',
+        unknown: 'Unknown'
     },
     navbar: {
         plants: 'Plants',
-        genus: 'Genus'
+        genus: 'Genus',
+        species: 'Species'
     },
     search:{
         name: 'Name',
@@ -24,6 +26,16 @@ export default
         rank:	'Rank',
         family_common_name:	'Family',
         genus: 'Genus',
-        vegetable: 'Vegetable'
+        vegetable: 'Vegetable',
+    },
+    species:{
+        common_name: 'Common name',
+        scientific_name: 'Scientific name',
+        genus: 'Genus',
+        family_common_name: 'Family',
+        year:	'Year of discover',
+        status:	'Status',
+        rank:	'Rank',
+        vegetable: 'Vegetable',
     }
 };

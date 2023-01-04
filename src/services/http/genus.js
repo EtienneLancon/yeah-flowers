@@ -2,8 +2,8 @@ import { BaseHttp } from "./http.js";
 
 export class Genus extends BaseHttp
 {
-    constructor(){
-        super();
+    constructor(alertService){
+        super(alertService);
     }
 
     async filter(filter = {})

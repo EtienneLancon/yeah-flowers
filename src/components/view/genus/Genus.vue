@@ -1,11 +1,12 @@
 <script>
     import Search from '../../parts/Search.vue';
-    import { Genus } from '../../../http/genus';
+    import { Genus } from '../../../services/http/genus';
 
     export default
     {
-        setup() {
-            const service = new Genus();
+        props: ['alertService'],
+        setup(props) {
+            const service = new Genus(props.alertService);
 
             const searchForm = {
                 name: ''

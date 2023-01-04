@@ -14,6 +14,9 @@ let search = '';
         <router-link to="/genus">
             <div class="button">{{$t('navbar.genus')}}</div>
         </router-link>
+        <router-link to="/species">
+            <div class="button">{{$t('navbar.species')}}</div>
+        </router-link>
         <!-- <div class="right"><input type="text"/>là va y avoir une loupe</div> -->
         <InputText class="right" v-model="search"></InputText>
     </div>

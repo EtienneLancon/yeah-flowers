@@ -1,10 +1,10 @@
 <script>
-    import { Plants } from '../../../services/http/plants';
+    import { Species } from '../../../services/http/species';
     import { BoolDir } from '../../../directives/booldir'
 
     export default
     {
-        props: ['alertService'],
+        props:['alertService'],
         data(){
             return{
                 data: {}
@@ -12,7 +12,7 @@
         },
         setup(props) {
             const booldir = new BoolDir();
-            const service = new Plants(props.alertService);
+            const service = new Species(props.alertService);
 
             return {
                 booldir,
@@ -29,10 +29,22 @@
         <img :src="data.image_url"/>
         <div class="text">
             <div class="title">{{data.scientific_name}}</div>
-            <div>
-                <div>{{ $t('plants.vegetable') }}</div>
-                <div>{{ $t(booldir.strBool(data.vegetable)) }}</div>
-            </div>
+            <table class="tabledetail">
+                <tbody>
+                    <tr>
+                        <td>{{ $t('species.genus') }}</td>
+                        <td>{{ data.genus }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ $t('species.scientific_name') }}</td>
+                        <td>{{ data.scientific_name }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ $t('species.family_common_name') }}</td>
+                        <td>{{ data.family_common_name ?? $t('common.unknown')}}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </template>

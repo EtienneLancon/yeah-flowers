@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import routes from './routes.js'
 import i18n from './i18n/i18n.js'
+import VueBasicAlert from 'vue-basic-alert'
 
 import './assets/main.css'
 
@@ -16,6 +17,7 @@ let app = createApp(App);
 
 app.use(router);
 app.use(i18n);
+app.component('VueBasicAlert', VueBasicAlert);
 
 app.mount('#app');
 
