@@ -1,7 +1,7 @@
 # yeah-flowers
 
-This Vue app is base on the free https://trefle.io/ API. Thanks to them.
-You'll have to register on their website to get your own token.
+This Vue app is a likely abandonned side project based on the free https://trefle.io/ API. Thanks to them.
+If You like to see great ideas with no petrol, you'll have to register on their website to get your own token.
 
 ## Project Setup
 
@@ -11,7 +11,7 @@ npm install
 
 ## Get browser intended Trefle API Token
 
-Rename .env.dist file in .env and modify it to your needs (don't forget to .gitignore it (you're welcome)), then execute
+Rename .env.dist file in .env and modify it to your needs, then execute
 
 ```sh
 ./getJsToken.sh
