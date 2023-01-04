@@ -1,35 +1,7 @@
 export class AlertService
 {
-    // constructor()
-    // {
-    //     this.alerts = [];
-    // }
-
-    // addAlert(alert)
-    // {
-    //     this.alerts.push(alert);
-    // }
-
-    // removeAlert(alert)
-    // {
-    //     this.alerts = this.alerts.filter(a => a !== alert);
-    // }
-
-    // clear()
-    // {
-    //     this.alerts = [];
-    // }
-
-    // show(alert)
-    // {
-    //     this.addAlert(alert);
-    //     setTimeout(() => this.removeAlert(alert), 5000);
-    // }
-
     show(alert)
     {
-        // this.ref.showAlert(alert);
-        //
         this.ref.showAlert(alert.type, alert.message, alert?.header, alert?.iconSize, alert?.iconStyle)
     }
 
